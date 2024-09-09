@@ -5,11 +5,8 @@
 }
 
 body {
-    background-color: #1a1a40;
+    background-color: #2a2a58;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: Arial, sans-serif;
 }
 
@@ -20,8 +17,9 @@ body {
     height: 50px;
     background-color: rgba(20, 26, 60, 0.7);
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 .brand {
@@ -36,4 +34,38 @@ body {
 
 .brand:hover {
     text-decoration: underline;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.discord-container {
+    position: relative;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #141a3c;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    white-space: nowrap;
+}
+
+.discord-container:hover .tooltip {
+    display: block;
 }
