@@ -20,6 +20,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    z-index: 1000;
 }
 
 .brand {
@@ -33,6 +34,18 @@ body {
 }
 
 .brand:hover {
+    text-decoration: underline;
+}
+
+.menu a {
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu a:hover {
     text-decoration: underline;
 }
 
@@ -69,3 +82,39 @@ body {
 .discord-container:hover .tooltip {
     display: block;
 }
+
+.projects-section {
+    margin-top: 100px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.projects-section.visible {
+    opacity: 1;
+}
+
+.projects-section h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    list-style: none;
+}
+
+.project-list li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.project-list a {
+    color: #00d1b2;
+    text-decoration: none;
+}
+
+.project-list a:hover {
+    text-decoration: underline;
+}
+
